@@ -84,7 +84,7 @@ RegisterNetEvent('qbx_stormram:client:useStormram', function(source)
         then    
             TriggerEvent('ox_doorlock:setState', ClosestDoor.id, 1) 
         else 
-            exports.qbx_core:Notify('Avbrutt!', 'error') 
+            exports.qbx_core:Notify('Cancelled!', 'error') 
         end
     else
         if lib.progressCircle({
