@@ -82,7 +82,7 @@ RegisterNetEvent('qbx_stormram:client:useStormram', function(source)
         })
 
         then    
-            TriggerEvent('ox_doorlock:setState', ClosestDoor.id, 1) 
+            TriggerServerEvent('howsn_stormram:server:setState', ClosestDoor.id, 1) 
         else 
             exports.qbx_core:Notify('Cancelled!', 'error') 
         end
@@ -108,7 +108,7 @@ RegisterNetEvent('qbx_stormram:client:useStormram', function(source)
             local randomChance = math.random(1, 100)
 
             if randomChance <= 50 then
-                TriggerEvent('ox_doorlock:setState', ClosestDoor.id, 0)
+                TriggerServerEvent('howsn_stormram:server:setState', ClosestDoor.id, 0)
                 exports.qbx_core:Notify('You opened the door!', 'error')
             else
                 exports.qbx_core:Notify('You couldnt do it!', 'error')
