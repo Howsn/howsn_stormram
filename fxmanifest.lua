@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Howsn'
 description 'Stormram script for ox_doorlock!'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
   '@ox_lib/init.lua'
